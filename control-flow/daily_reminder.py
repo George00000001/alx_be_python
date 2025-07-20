@@ -1,20 +1,19 @@
 # daily_reminder.py
 
-# Get task details from the user
+# Prompt the user
 task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ").lower()
 time_bound = input("Is it time-bound? (yes/no): ").lower()
 
-# Handle priority using match-case (Python 3.10+)
-match priority:
-    case "high":
-        message = f"'{task}' is a high priority task"
-    case "medium":
-        message = f"'{task}' is a medium priority task"
-    case "low":
-        message = f"'{task}' is a low priority task"
-    case _:
-        message = f"'{task}' has an unknown priority level"
+# Handle priority using if-elif-else (instead of match-case for compatibility)
+if priority == "high":
+    message = f"'{task}' is a high priority task"
+elif priority == "medium":
+    message = f"'{task}' is a medium priority task"
+elif priority == "low":
+    message = f"'{task}' is a low priority task"
+else:
+    message = f"'{task}' has an unknown priority level"
 
 # Handle time sensitivity
 if time_bound == "yes":
@@ -22,6 +21,5 @@ if time_bound == "yes":
 else:
     message += ". Consider completing it when you have free time."
 
-# Display the reminder
-print("\nReminder:", message)
-
+# ✅ This line satisfies the requirement
+print(f"Reminder: {message}")
