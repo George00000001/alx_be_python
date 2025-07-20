@@ -18,9 +18,10 @@ match priority:
 
 # Handle time sensitivity
 if time_bound == "yes":
-    print(" that requires immediate attention today!")
+    message += " that requires immediate attention today!"
 else:
-    print(". Consider completing it when you have free time")
+    message += ". Consider completing it when you have free time."
 
 # Display the reminder
 print("\nReminder:", message)
+
