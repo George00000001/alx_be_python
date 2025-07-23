@@ -5,7 +5,7 @@ time_bound = input("Is it time-bound? (yes/no): ").lower()
 match priority:
     case "high":
         if time_bound == "yes":
-            print(f"{task} is a {priority} priority task that requires immediate attention today!")
+            print(f"Reminder: {task} is a {priority} priority task that requires immediate attention today!")
     case "medium":
         if time_bound == "yes":
             print(f"{task} is a {priority} priority task that requires attention this week!")
