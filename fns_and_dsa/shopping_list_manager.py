@@ -21,7 +21,10 @@ def main():
         elif choice == '2':
             # Prompt for and remove an item
             user_input = str(input("Enter the item you wish to remove: "))
-            removing = shopping_list.remove(user_input)
+            if user_input in shopping_list:
+                removing = shopping_list.remove(user_input)
+            else:
+                print(f"{user_input}was not found in the shopping list.")
             print(f"your list {shopping_list}")
             pass
         elif choice == '3':
@@ -29,7 +32,7 @@ def main():
             print(f"your list {shopping_list}")
             pass
         elif choice == '4':
-            print("Goodbye!")
+            print(f"Goodbye!")
             break
         else:
             print("Invalid choice. Please try again.")
