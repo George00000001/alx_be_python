@@ -1,0 +1,62 @@
+Serialization and Deserialization in Python
+Serialization in Python refers to the process of converting a Python object into a format that can be easily stored or transmitted, such as a byte stream. Deserialization is the reverse process, where the stored data is converted back into its original Python object. These processes are essential for tasks like saving program state, sending data over a network, or persisting data to a file.
+
+Example 1: Using the json Module
+The json module is used for serializing and deserializing data to and from the JSON format, which is human-readable and widely used for data interchange.
+
+Serialization:
+import json
+
+# Sample Python object
+data = {'name': 'Alice', 'age': 30, 'city': 'Kampala'}
+
+# Serialize the object to a JSON string
+json_string = json.dumps(data)
+
+# Optionally, write the JSON string to a file
+with open('data.json', 'w') as file:
+    json.dump(data, file)
+Here, the dictionary data is converted to a JSON string and also written to a file named data.json.
+
+Deserialization:
+import json
+# Deserialize the JSON string back into a Python object
+    data = json.loads(json_string)
+# Or read from a file and deserialize
+with open('data.json', 'r') as file:
+    data = json.load(file)
+print(data)
+This code converts the JSON string back into a Python dictionary and demonstrates how to read and deserialize data from a JSON file.
+
+Example 1: Using the pickle Module
+The pickle module in Python allows for serializing and deserializing Python objects.
+
+Serialization (Pickling):
+import pickle
+
+# Sample Python object
+data = {'name': 'Alice', 'age': 30, 'city': 'Kampala'}
+
+# Serialize the object to a file
+with open('data.pkl', 'wb') as file:
+    pickle.dump(data, file)
+In this example, the dictionary data is serialized and saved to a file named data.pkl.
+
+Deserialization (Unpickling):
+import pickle
+
+# Deserialize the object from the file
+with open('data.pkl', 'rb') as file:
+    loaded_data = pickle.load(file)
+    print(loaded_data)
+This code reads the serialized data from data.pkl and reconstructs the original dictionary. - Warning: The pickle module is not secure. Only unpickle data you trust.
+
+Both pickle and json modules provide straightforward methods for serializing and deserializing Python objects, each suitable for different scenarios. While pickle can handle a wider variety of Python data types, json is limited to basic data types but offers better interoperability with other programming languages.
+
+Task
+Create a Python function called process_json(data: dict, filename: str) -> dict that does the following:
+
+Takes a dictionary (data) and a filename (filename) as input.
+Serializes the dictionary to a JSON file with the given filename.
+Deserializes the JSON file back into a dictionary.
+Returns the deserialized dictionary.

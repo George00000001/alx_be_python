@@ -1,0 +1,63 @@
+Ever feel like there’s more than one way to solve a programming problem? You’re right! Different programming paradigms offer distinct approaches to structuring your code, just like having different tools in your toolbox! This concept page will explore some of these common paradigms to give you a foundation for your programming journey.
+
+Concept Overview:
+Topics
+Procedural Programming: Imagine a recipe with steps - that’s procedural! We’ll break down how problems are solved step-by-step.
+
+Object Oriented Programming(OOP): Think of building blocks! In OOP, we’ll explore creating objects and using them like building blocks to solve problems.
+
+Procedural vs. OOP: Which one should you use?
+
+Learning Objectives:
+Understand what procedural programming is.
+Introduction to Object-Oriented Programming (OOP) and its key principles.
+Procedural Programming:
+Imagine you’re following a recipe. Each step guides you through a specific action, like mixing ingredients or baking a cake. Procedural programming works in a similar way! It’s a style of programming that breaks down problems into a sequence of instructions, just like the steps in a recipe. These instructions are then executed one after the other to achieve the desired outcome.
+
+Here are some key characteristics of procedural programming:
+
+Focus on Procedures: Procedures (also called functions) are reusable blocks of code that perform specific tasks. Think of them as mini-recipes within your main program.
+
+Top-Down Approach: Procedural programs follow a top-down approach, like following a recipe. The code executes instructions one line at a time, from beginning to end.
+
+Data and Logic Separation: Data (information) and the procedures that operate on that data are often treated separately. This can make code easier to understand and modify.
+
+Object Oriented Programming (OOP):
+Procedural programming is great, but imagine if you could create reusable building blocks for your code. That’s the power of Object-Oriented Programming (OOP)! OOP lets you think about problems in terms of real-world objects and their interactions.
+
+Here’s a sneak peek at some cool OOP features:
+
+Classes:Imagine a Lego instruction sheet - that’s a class! It tells you what parts (properties) your object needs (like wheels for a car) and what it can do (methods like “drive”).
+
+Objects: These are the actual Legos you build with! Each object is built from a class and has its own unique properties (a red car) and can do the things its class allows (vroom vroom!).
+
+Inheritance: Ever build a cool spaceship using leftover car pieces? Inheritance is like that! New classes (spaceship) can inherit properties (wheels) and abilities (movement) from existing ones (car).
+
+Encapsulation: Think of a Lego set with a special opening to put the pieces inside. Encapsulation keeps an object’s insides hidden, letting you interact with it only through specific ways (like buttons).
+
+Polymorphism: Imagine using the same key to open different doors. Polymorphism lets objects of different classes respond in their own way to the same command, making code more flexible (one key, many uses!).
+
+This is just a taste of the OOP world. As you keep learning, you’ll unlock the power of objects and build even cooler code creations!
+
+Here’s a video on OOP. 
+
+Choosing Your Weapon: Procedural vs. OOP
+Now that you’ve seen the basics of procedural and object-oriented programming, the question arises: which one should you use? The answer, like many things in programming, depends on the problem at hand. Here’s a breakdown to help you decide:
+
+Procedural Programming Wins When:
+Simple Tasks: For small, well-defined problems with limited data manipulation, procedural programming shines. Think of basic calculations or short scripts - a step-by-step approach is clear and efficient.
+
+*Focus on Logic: *Procedural programming excels when the core logic is the main focus. Algorithms and calculations often thrive in this structured environment.
+
+Quick Prototypes: Need to get a basic program up and running fast? Procedural programming’s simplicity makes it ideal for rapid prototyping. You can test core functionalities before diving into more complex structures.
+
+OOP Takes the Stage When:
+Complex Systems: Building large applications with many interacting components? OOP is your friend! Objects encapsulate data and functionality, promoting modularity and reusability.
+
+Real-World Modeling: OOP excels at mimicking real-world entities and their relationships. Imagine a program simulating a city - objects like “Car” and “Building” naturally fit into an OOP approach.
+
+Maintainability & Scalability: As your code grows, OOP’s structure promotes maintainability. Encapsulation protects data integrity, and inheritance allows for code reuse and expansion.
+
+Remember, it’s not always black and white! Some problems might benefit from a hybrid approach. You can leverage procedural techniques within an overall OOP structure for specific functionalities.
+
+Ultimately, the best way to choose is to** understand the problem and your goals. ** Procedural programming offers a clear and efficient approach for simpler tasks. Object-oriented programming provides a powerful tool for building complex, maintainable systems. As you gain experience, you’ll develop an intuition for which approach best suits your programming challenges.
